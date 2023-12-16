@@ -1,0 +1,155 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wgt@700&display=swap');*/
+/*@import url ('https://fonts.googleapis.com/css?family=Satisfy&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fundo da tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 85.5%;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(69, 67, 67, 0.549), rgb(31, 29, 29)), url(img/img01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Header -NavBar */
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(139, 145, 113, 0.278);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: rgb(102, 227,13);
+    padding: 1.rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(255, 0, 195);
+    transition: all 1.8s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto conteudo principal */
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(67, 223, 192);
+    text-transform: uppercase;
+}
+
+/*Botões*/
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:before {
+    content: ' ' ;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0px;
+    height: 60px;
+    background-color: rgba(89, 90, 91, 0.52);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+.btns button:hover {
+    color: rgb(251, 255, 0);
+    border: none;
+}
